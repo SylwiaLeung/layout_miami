@@ -1,0 +1,27 @@
+.navigation {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-rows: 72px;
+  justify-content: space-between;
+  align-self: start;
+
+  &__actions {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 24px 24px 24px;
+    align-self: center;
+  }
+
+  &__icon {
+    display: block;
+  }
+
+  &__toggle {
+    grid-column: 3 / 4;
+  }
+
+  &__logo {
+    grid-column: 1 / 2;
+    align-self: center;
+  }
+}
