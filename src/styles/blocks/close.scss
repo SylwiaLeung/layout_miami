@@ -1,0 +1,9 @@
+.close {
+  cursor: pointer;
+
+  &__icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
+}
