@@ -1,5 +1,4 @@
 .navigation {
-  grid-column: 1 / 3;
   display: grid;
   grid-template-rows: 72px;
   justify-content: space-between;
@@ -17,13 +16,11 @@
     grid-column: 1 / 2;
   }
 
-  &__icon {
-    display: block;
-    width: 18px;
-    height: 18px;
-  }
-
   &__toggle {
     grid-column: 3 / 4;
+  }
+
+  &__close {
+    grid-column: 2 / 3;
   }
 }

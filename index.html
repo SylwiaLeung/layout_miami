@@ -35,7 +35,7 @@
     ></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <nav class="navigation header__navigation">
         <a href="" class="logo navigation__logo">
           <img src="./src/images/logo.svg" alt="Logo" class="logo__icon">
@@ -43,7 +43,7 @@
 
         <div class="navigation__actions">
           <a href="" class="phone navigation__phone">
-            <img src="./src/images/phone-call.svg" alt="Phone call" class="navigation__icon phone__icon">
+            <img src="./src/images/phone-call.svg" alt="Phone call" class="phone__icon">
           </a>
 
           <div class="toggle navigation__toggle">
@@ -53,7 +53,15 @@
             </label>
 
             <div class="menu">
-              <nav class="navigation menu__navigation"></nav>
+              <nav class="navigation menu__navigation">
+                <a href="" class="logo navigation__logo">
+                  <img src="./src/images/logo.svg" alt="Logo" class="logo__icon">
+                </a>
+
+                <label for="menu-toggle" class="close navigation__close">
+                  <img src="./src/images/close.svg" alt="Close menu" class="close__icon">
+                </label>
+              </nav>
             </div>
           </div>
         </div>
