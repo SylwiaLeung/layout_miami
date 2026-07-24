@@ -2,7 +2,6 @@
 
 .toggle {
   &__label {
-    display: block;
     cursor: pointer;
 
     &::before {
@@ -36,6 +35,10 @@
 
   &__input {
     @include visually-hidden;
+
+    &:checked ~ .menu {
+      transform: translateX(0);
+    }
 
     &:focus-visible + .toggle__label {
       outline: -webkit-focus-ring-color auto 1px;
