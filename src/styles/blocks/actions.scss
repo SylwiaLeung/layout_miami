@@ -1,0 +1,11 @@
+.actions {
+  &__toggle {
+    grid-column: 3 / 4;
+  }
+
+  &__icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+}
