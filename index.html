@@ -41,14 +41,20 @@
           <img src="./src/images/logo.svg" alt="Logo" class="logo__icon">
         </a>
 
-        <div class="actions navigation__actions">
-          <a href="" class="actions__phone">
-            <img src="./src/images/phone-call.svg" alt="Phone call" class="actions__icon">
+        <div class="navigation__actions">
+          <a href="" class="phone navigation__phone">
+            <img src="./src/images/phone-call.svg" alt="Phone call" class="navigation__icon phone__icon">
           </a>
 
-          <a href="" class="actions__toggle">
-            <img src="./src/images/burger.svg" alt="Toggle menu" class="actions__icon">
-          </a>
+          <div class="toggle navigation__toggle">
+            <input type="checkbox" id="menu-toggle" class="toggle__input">
+            <label for="menu-toggle" class="toggle__label">
+              <span class="toggle__caption">Open menu</span>
+            </label>
+          </div>
+          <!-- <a href="" class="toggle navigation__toggle">
+            <img src="./src/images/burger.svg" alt="Toggle menu" class="navigation__icon toggle__icon">
+          </a> -->
         </div>
       </nav>
 

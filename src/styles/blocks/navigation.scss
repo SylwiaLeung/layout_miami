@@ -16,4 +16,14 @@
   &__logo {
     grid-column: 1 / 2;
   }
+
+  &__icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  &__toggle {
+    grid-column: 3 / 4;
+  }
 }
