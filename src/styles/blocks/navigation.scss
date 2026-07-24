@@ -3,25 +3,17 @@
   display: grid;
   grid-template-rows: 72px;
   justify-content: space-between;
-  align-self: start;
+  align-items: center;
 
   &__actions {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 24px 24px 24px;
-    align-self: center;
-  }
-
-  &__icon {
-    display: block;
-  }
-
-  &__toggle {
-    grid-column: 3 / 4;
+    grid-template-rows: 24px;
+    place-items: center;
   }
 
   &__logo {
     grid-column: 1 / 2;
-    align-self: center;
   }
 }
