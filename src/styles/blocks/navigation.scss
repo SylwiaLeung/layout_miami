@@ -1,15 +1,13 @@
 .navigation {
-  display: grid;
-  grid-template-rows: 72px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 72px;
 
   &__actions {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 24px 24px 24px;
-    grid-template-rows: 24px;
-    place-items: center;
+    grid-template-columns: repeat(3, 24px);
   }
 
   &__logo {

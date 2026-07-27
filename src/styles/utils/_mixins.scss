@@ -5,6 +5,13 @@
   }
 }
 
+@mixin grid() {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  justify-content: center;
+  column-gap: 20px;
+}
+
 @mixin visually-hidden() {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
