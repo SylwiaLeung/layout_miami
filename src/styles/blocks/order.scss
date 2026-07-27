@@ -1,6 +1,8 @@
+@use '../utils/variables' as *;
+
 .order {
   grid-column: span 2;
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: $font-family-primary;
   font-weight: 700;
   font-style: Bold;
 
@@ -10,7 +12,7 @@
     letter-spacing: 0;
     vertical-align: middle;
     text-transform: uppercase;
-    color: #292929;
+    color: $color-text-primary;
     margin-bottom: 16px;
   }
 
@@ -21,12 +23,12 @@
     vertical-align: middle;
     text-transform: uppercase;
     text-decoration: none;
-    color: #292929;
+    color: $color-text-primary;
     padding-bottom: 8px;
     border-bottom: 1px solid transparent;
 
     &:hover {
-      border-bottom: 1px solid #292929;
+      border-bottom: 1px solid $color-text-primary;
     }
   }
 }

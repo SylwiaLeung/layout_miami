@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .links {
   padding: 32px 0;
 
@@ -6,7 +8,7 @@
   }
 
   &__link {
-    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-family: $font-family-primary;
     font-weight: 700;
     font-style: Bold;
     font-size: 22px;
@@ -15,6 +17,6 @@
     vertical-align: middle;
     text-transform: uppercase;
     text-decoration: none;
-    color: #292929;
+    color: $color-text-primary;
   }
 }

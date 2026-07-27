@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .header {
   box-sizing: border-box;
   min-height: 100vh;
@@ -15,14 +17,14 @@
   }
 
   &__title {
-    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-family: $font-family-primary;
     font-weight: 800;
     font-style: Italic;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -1.5px;
     vertical-align: middle;
-    color: #292929;
+    color: $color-text-primary;
 
     grid-column: 1 / 3;
     align-self: end;
