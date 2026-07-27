@@ -1,0 +1,10 @@
+.main {
+  @include grid;
+
+  padding-top: 64px;
+
+  &__section {
+    margin-bottom: 96px;
+    grid-column: span 2;
+  }
+}
