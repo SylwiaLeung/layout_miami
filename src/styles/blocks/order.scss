@@ -1,0 +1,32 @@
+.order {
+  grid-column: span 2;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 16px;
+  }
+
+  &__call-link {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #292929;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid #292929;
+    }
+  }
+}
