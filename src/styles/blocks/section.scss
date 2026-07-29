@@ -1,0 +1,19 @@
+@use '../utils/variables' as *;
+
+.section {
+  &__title {
+    font-family: $font-family-primary;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    color: $color-text-primary;
+    margin-bottom: 48px;
+
+    &--left {
+      text-align: left;
+    }
+  }
+}
