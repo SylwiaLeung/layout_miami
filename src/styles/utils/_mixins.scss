@@ -1,7 +1,22 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.5s ease-in-out;
+@use 'sass:list';
+
+@mixin hover($changes, $duration: 0.3s, $easing: ease-in-out) {
+  $transitions: ();
+
+  @each $property, $value in $changes {
+    $transitions: list.append(
+      $transitions,
+      #{$property} #{$duration} #{$easing},
+      comma
+    );
+  }
+
+  transition: $transitions;
+
   &:hover {
-    #{$_property}: $_toValue;
+    @each $property, $value in $changes {
+      #{$property}: $value;
+    }
   }
 }
 

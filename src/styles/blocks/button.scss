@@ -13,4 +13,17 @@
   border: 2px solid $color-primary;
   border-radius: 50px;
   height: 56px;
+
+  @include hover(
+    (
+      color: $color-primary,
+      background-color: white,
+    )
+  );
+
+  &:active {
+    transition: none;
+    background-color: #111;
+    color: white;
+  }
 }
