@@ -1,8 +1,14 @@
+@use '../utils/mixins' as *;
+
 .product {
   &__image {
     width: 280px;
     display: block;
     margin-bottom: 32px;
+
+    @include for-tablet {
+      width: 392px;
+    }
   }
 
   &__subtitle {

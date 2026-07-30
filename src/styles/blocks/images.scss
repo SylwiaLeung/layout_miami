@@ -7,6 +7,17 @@
     position: relative;
     width: 100%;
     padding-top: 100%;
+
+    @include for-tablet {
+      grid-column: span 2;
+    }
+
+    &--big {
+      @include for-tablet {
+        grid-column: span 4;
+        padding-top: 184px;
+      }
+    }
   }
 
   &__image {

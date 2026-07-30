@@ -133,7 +133,7 @@
         <div class="section__content">
           <article class="category section__category">
             <div class="images category__images">
-              <div class="images__item">
+              <div class="images__item images__item--big">
                 <img src="/src/images/cat1.jpg" alt="" class="images__image images__image--offset-60">
               </div>
               <div class="images__item">
@@ -144,7 +144,7 @@
           </article>
           <article class="category section__category">
             <div class="images category__images">
-              <div class="images__item">
+              <div class="images__item images__item--big">
                 <img src="/src/images/cat3.png" alt="" class="images__image images__image--offset-90">
               </div>
               <div class="images__item">
@@ -158,13 +158,13 @@
               <div class="images__item">
                 <img src="/src/images/cat5.png" alt="" class="images__image">
               </div>
-              <div class="images__item">
+              <div class="images__item images__item--big">
                 <img src="/src/images/cat6.jpg" alt="" class="images__image images__image--offset-90">
               </div>
             </div>
             <h3 class="subtitle category__subtitle">Audio sunglasses</h3>
           </article>
-          <button class="button">View all</button>
+          <button class="button section__button">View all</button>
         </div>
       </section>
 
@@ -199,41 +199,39 @@
       <section class="section main__section">
         <h2 class="section__title">Contact us</h2>
 
-        <form action="" class="form section__form">
-          <div class="form__item">
-            <label for="name" class="form__label">Name</label>
-            <input class="input form__input" type="text" placeholder="Name" id="name">
-          </div>
-  
-          <div class="form__item">
-            <label for="email" class="form__label">Email</label>
-            <input class="input form__input" type="email" placeholder="Email" id="email">
-          </div>
-  
-          <div class="form__item">
-            <label for="message" class="form__label">Message</label>
-            <textarea class="input form__textarea" placeholder="Message" id="message" rows="4"></textarea>
-          </div>
-
-          <button class="button form__button">Send</button>
-        </form>
-
-        <address class="address section__address">
-          <article class="address__item">
-            <h4 class="address__title">Phone</h4>
-            <p class="address__info">+1 234 5555-55-55</p>
-          </article>
-
-          <article class="address__item">
-            <h4 class="address__title">Email</h4>
-            <p class="address__info">hello@miami.com</p>
-          </article>
-
-          <article class="address__item">
-            <h4 class="address__title">Address</h4>
-            <p class="address__info">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</p>
-          </article>
-        </address>
+        <div class="section__content">
+          <form action="" class="form section__form">
+            <div class="form__items">
+              <div class="form__item">
+                <label for="name" class="form__label">Name</label>
+                <input class="input form__input" type="text" placeholder="Name" id="name">
+              </div>
+              <div class="form__item">
+                <label for="email" class="form__label">Email</label>
+                <input class="input form__input" type="email" placeholder="Email" id="email">
+              </div>
+              <div class="form__item">
+                <label for="message" class="form__label">Message</label>
+                <textarea class="input form__textarea" placeholder="Message" id="message" rows="4"></textarea>
+              </div>
+            </div>
+            <button class="button form__button">Send</button>
+          </form>
+          <address class="address section__address">
+            <article class="address__item">
+              <h4 class="address__title">Phone</h4>
+              <p class="address__info">+1 234 5555-55-55</p>
+            </article>
+            <article class="address__item">
+              <h4 class="address__title">Email</h4>
+              <p class="address__info">hello@miami.com</p>
+            </article>
+            <article class="address__item">
+              <h4 class="address__title">Address</h4>
+              <p class="address__info">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</p>
+            </article>
+          </address>
+        </div>
       </section>
     </main>
 
