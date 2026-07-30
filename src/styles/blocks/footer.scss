@@ -1,0 +1,11 @@
+@use '../utils/mixins' as *;
+
+.footer {
+  @include grid;
+
+  height: 200px;
+  background-image: url(../../../src/images/footer.jpg);
+  background-position: 50% 25%;
+  background-size: 580px 320px;
+  background-repeat: no-repeat;
+}
