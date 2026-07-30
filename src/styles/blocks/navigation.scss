@@ -13,9 +13,12 @@
   }
 
   &__actions {
-    grid-column: 2 / 3;
     display: grid;
     grid-template-columns: repeat(3, 24px);
+
+    @include for-tablet {
+      grid-template-columns: repeat(3, 32px);
+    }
   }
 
   &__toggle {

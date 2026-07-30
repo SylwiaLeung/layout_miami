@@ -10,6 +10,13 @@
       width: 24px;
       height: 24px;
       background-image: url(../../../src/images/burger.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include for-tablet {
+        width: 32px;
+        height: 32px;
+      }
     }
 
     &::after {
@@ -18,6 +25,13 @@
       width: 24px;
       height: 24px;
       background-image: url(../../../src/images/burger-hover.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include for-tablet {
+        width: 32px;
+        height: 32px;
+      }
     }
 
     &:hover {
