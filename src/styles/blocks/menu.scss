@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .menu {
   position: absolute;
   left: 0;
@@ -11,14 +13,21 @@
 
   @include grid;
 
-  padding: 0 20px;
   align-content: start;
 
   &__links {
     grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
   }
 
   &__order {
     grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
   }
 }

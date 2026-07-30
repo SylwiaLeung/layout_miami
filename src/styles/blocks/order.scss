@@ -1,16 +1,14 @@
 @use '../utils/variables' as *;
 
 .order {
-  grid-column: span 2;
   font-family: $font-family-primary;
   font-weight: 700;
+  text-transform: uppercase;
 
   &__paragraph {
     font-size: 16px;
     line-height: 27px;
     letter-spacing: 0;
-    vertical-align: middle;
-    text-transform: uppercase;
     color: $color-primary;
     margin-bottom: 16px;
   }
@@ -19,8 +17,6 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
-    vertical-align: middle;
-    text-transform: uppercase;
     text-decoration: none;
     color: $color-primary;
     padding-bottom: 8px;
