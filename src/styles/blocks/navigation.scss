@@ -1,17 +1,21 @@
+@use '../utils/mixins' as *;
+
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 72px;
+  grid-column: span 2;
+
+  @include for-tablet {
+    height: 96px;
+    grid-column: span 6;
+  }
 
   &__actions {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: repeat(3, 24px);
-  }
-
-  &__logo {
-    grid-column: 1 / 2;
   }
 
   &__toggle {
