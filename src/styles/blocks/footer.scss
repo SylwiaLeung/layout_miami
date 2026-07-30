@@ -5,7 +5,15 @@
 
   height: 200px;
   background-image: url(../../../src/images/footer.jpg);
-  background-position: 50% 25%;
-  background-size: 580px 320px;
+  background-position: center 25%;
+  background-size: cover;
   background-repeat: no-repeat;
+
+  @include for-tablet {
+    height: 400px;
+  }
+
+  @include for-desktop {
+    height: 460px;
+  }
 }

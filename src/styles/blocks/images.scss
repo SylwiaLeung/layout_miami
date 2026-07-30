@@ -18,6 +18,11 @@
 
     &--big {
       @include for-tablet {
+        grid-column: span 4;
+        padding-top: 184px;
+      }
+
+      @include for-desktop {
         grid-column: span 8;
         padding-top: 184px;
       }
