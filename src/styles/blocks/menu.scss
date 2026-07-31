@@ -6,12 +6,24 @@
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
   box-sizing: border-box;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #e8eff9;
 
   @include grid;
 
   align-content: start;
+
+  &__navigation {
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+
+    @include for-desktop {
+      grid-column: span 12;
+    }
+  }
 
   &:target {
     transform: translateX(0);
@@ -26,7 +38,7 @@
       margin: 56px 0 40px;
     }
 
-    @include for-tablet {
+    @include for-desktop {
       grid-column: span 12;
     }
   }
@@ -36,6 +48,10 @@
 
     @include for-tablet {
       grid-column: span 6;
+    }
+
+    @include for-desktop {
+      grid-column: span 12;
     }
   }
 }
