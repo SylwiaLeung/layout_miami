@@ -45,18 +45,6 @@
     }
   }
 
-  &__input {
-    @include visually-hidden;
-
-    &:checked ~ .menu {
-      transform: translateX(0);
-    }
-
-    &:focus-visible + .toggle__label {
-      outline: -webkit-focus-ring-color auto 1px;
-    }
-  }
-
   &__caption {
     @include visually-hidden;
   }

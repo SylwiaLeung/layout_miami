@@ -37,7 +37,7 @@
   <body>
     <header class="header" id="home">
       <nav class="navigation header__navigation">
-        <a href="" class="logo navigation__logo">
+        <a href="#home" class="logo navigation__logo">
           <img src="./src/images/logo.svg" alt="Logo" class="logo__icon">
         </a>
 
@@ -48,41 +48,40 @@
           </a>
 
           <div class="toggle navigation__toggle">
-            <input type="checkbox" id="menu-toggle" class="toggle__input">
-            <label for="menu-toggle" class="toggle__label">
+            <a href="#menu" class="toggle__label" aria-label="Open menu">
               <span class="toggle__caption">Open menu</span>
-            </label>
-
-            <div class="menu">
-              <nav class="navigation menu__navigation">
-                <a href="" class="logo navigation__logo">
-                  <img src="./src/images/logo.svg" alt="Logo" class="logo__icon">
-                </a>
-
-                <label for="menu-toggle" class="close navigation__close">
-                  <img src="./src/images/close.svg" alt="Close menu" class="close__icon">
-                </label>
-              </nav>
-
-              <nav class="links menu__links">
-                <ul class="links__list">
-                  <li class="links__item"><a href="" class="links__link">home</a></li>
-                  <li class="links__item"><a href="" class="links__link">recommended</a></li>
-                  <li class="links__item"><a href="" class="links__link">categories</a></li>
-                  <li class="links__item"><a href="" class="links__link">How to buy</a></li>
-                  <li class="links__item"><a href="" class="links__link">Contacts</a></li>
-                </ul>
-              </nav>
-
-              <div class="order menu__order">
-                <p class="order__paragraph">+1 234 5555-55-55</p>
-
-                <a href="" class="order__call-link">call to order</a>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </nav>
+
+      <div class="menu" id="menu">
+        <nav class="navigation menu__navigation">
+          <a href="#home" class="logo navigation__logo">
+            <img src="./src/images/logo.svg" alt="Logo" class="logo__icon">
+          </a>
+
+          <a href="#home" class="close navigation__close" aria-label="Close menu">
+            <img src="./src/images/close.svg" alt="Close menu" class="close__icon">
+          </a>
+        </nav>
+
+        <nav class="links menu__links">
+          <ul class="links__list">
+            <li class="links__item"><a href="#home" class="links__link">home</a></li>
+            <li class="links__item"><a href="#recommended" class="links__link">recommended</a></li>
+            <li class="links__item"><a href="" class="links__link">categories</a></li>
+            <li class="links__item"><a href="" class="links__link">How to buy</a></li>
+            <li class="links__item"><a href="" class="links__link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="order menu__order">
+          <p class="order__paragraph">+1 234 5555-55-55</p>
+
+          <a href="" class="order__call-link">call to order</a>
+        </div>
+      </div>
 
       <h1 class="header__title">
         The world shades.<br>
@@ -91,7 +90,7 @@
     </header>
 
     <main class="main">
-      <section class="section main__section">
+      <section class="section main__section" id="recommended">
         <h2 class="section__title">Recommended</h2>
 
         <div class="section__content">
