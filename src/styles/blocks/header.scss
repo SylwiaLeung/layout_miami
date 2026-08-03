@@ -4,7 +4,7 @@
 .header {
   box-sizing: border-box;
   height: 100vh;
-  background-image: url(../../../src/images/header-background.jpg);
+  background-image: url(../../src/images/header-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -62,7 +62,7 @@
       display: block;
       width: 48px;
       height: 58px;
-      background-image: url(../../../src/images/sound-waves.svg);
+      background-image: url(../../src/images/sound-waves.svg);
       margin-bottom: 16px;
 
       @include for-tablet {
